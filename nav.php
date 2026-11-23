@@ -4,12 +4,12 @@ $current = basename($_SERVER["PHP_SELF"]);   // current file name, e.g. "enroll.
 
 // Link list: file => label
 $links = [
-    "index.php"     => "Home",
-    "enroll.php"    => "Enroll Student",
-    "dashboard.php" => "Dashboard",
-    "report.php"    => "Student Report",
+    "index.php"       => "Home",
+    "add_student.php" => "Add Student",
+    "enroll.php"      => "Enroll Student",
+    "dashboard.php"   => "Dashboard",
+    "report.php"      => "Student Report",
 ];
-
 // save_enroll.php belongs to the Enroll Student section
 if ($current === "save_enroll.php") {
     $current = "enroll.php";

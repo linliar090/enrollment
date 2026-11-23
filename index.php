@@ -17,13 +17,17 @@
 <section class="hero">
     <h1>Course Enrollment System</h1>
     <p>Enroll students in courses, track statistics at a glance and generate student-wise reports.</p>
-    <a class="btn" href="enroll.php"><i class="ti ti-user-plus"></i> Enroll a Student</a>
 </section>
 
 <!-- Quick-link cards -->
 <div class="cards">
+    <a class="card" href="add_student.php">
+    <span class="icon"><i class="ti ti-id-badge"></i></span>
+    <h3>Add Student</h3>
+    <p>Register a new student by entering their details.</p>
+    </a>
     <a class="card" href="enroll.php">
-        <span class="icon"><i class="ti ti-user-plus"></i></span>
+        <span class="icon"><i class="ti ti-clipboard-check"></i></span>
         <h3>Enroll Student</h3>
         <p>Register a student for a course.</p>
     </a>

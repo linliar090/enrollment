@@ -67,26 +67,6 @@ $recent = $conn->query(
         <?php endwhile; ?>
     </table>
     </div>
-
-    <!-- Recent enrollments -->
-    <h3>Recent Enrollments</h3>
-    <div class="table-wrap">
-    <table>
-        <tr><th>Student Name</th><th>Course Title</th><th>Semester</th><th>Enrollment Date</th></tr>
-        <?php if ($recent->num_rows === 0): ?>
-            <tr><td colspan="4" class="center">No enrollments yet</td></tr>
-        <?php else: ?>
-            <?php while ($r = $recent->fetch_assoc()): ?>
-                <tr>
-                    <td><?= htmlspecialchars($r['name']) ?></td>
-                    <td><?= htmlspecialchars($r['course_title']) ?></td>
-                    <td><?= htmlspecialchars($r['semester'] ?? '') ?></td>
-                    <td><?= htmlspecialchars($r['enroll_date'] ?? '') ?></td>
-                </tr>
-            <?php endwhile; ?>
-        <?php endif; ?>
-    </table>
-    </div>
 </div>
 <?php include "footer.php"; ?>
 </body>
